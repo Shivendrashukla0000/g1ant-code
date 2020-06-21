@@ -1,0 +1,12 @@
+addon net version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+
+♥login = rpt12345rpt@gmail.com
+♥password = Silk@123
+
+mail.imap imap.gmail.com login ♥login password ♥password sincedate ♥date onlyunreadmessages true ignorecertificateerrors true result ♥list 
+dialog ♥list
+foreach ♥element in ♥list
+  dialog ♥element⟦content⟧
+end
