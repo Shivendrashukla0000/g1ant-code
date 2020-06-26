@@ -1,0 +1,19 @@
+addon xlsx version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+xlsx.open D:\Tests\Book1.xlsx result ♥excelId1
+xlsx.open D:\Tests\Book2.xlsx accessmode readwrite createifnotexist true result ♥excelId2
+xlsx.switch id ♥excelId1
+xlsx.setvalue value SHIV row 1 colname a
+xlsx.getvalue row 1  colname a
+dialog ♥result
+xlsx.countrows result ♥abc
+dialog ♥abc
+xlsx.find SHIV errormessage ‴Value not found‴
+dialog ‴Value found in the cell: column ♥resultcolumn, row ♥resultrow‴
+xlsx.close id ♥excelId1
+xlsx.switch id ♥excelId2
+xlsx.setvalue value pihu row 1 colname a
+xlsx.getvalue row 1  colname a
+dialog ♥result
+xlsx.close id ♥excelId2
