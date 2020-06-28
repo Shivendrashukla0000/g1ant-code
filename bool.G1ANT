@@ -1,0 +1,7 @@
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+
+♥number1 = ⟦bool⟧true
+dialog  ♥number1⟦number⟧
+♥number2 = ⟦bool⟧false
+dialog ♥number2
